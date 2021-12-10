@@ -4,11 +4,14 @@ body {
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(203,226,195,1) 0%, rgba(17,204,242,1) 80%);
 }
 
-.login-text {
+/* h2 text */
+h2 {
     text-align: center;
     text-shadow: 1px 1px 2px rgb(247, 247, 247);
+    font-size: 30px;
 }
 
+/* form box */
 .login-box {
     background-color: #ACF39D;
     width: 320px;
@@ -21,7 +24,7 @@ body {
     background: linear-gradient(164deg, rgba(2,0,36,1) 0%, rgba(126,213,97,1) 0%, rgba(17,204,242,1) 80%);
 }
 
-
+/* button style */
 button{
     width: 150px;
     height:45px;
@@ -41,41 +44,81 @@ button{
     transition: all .5s;
     box-shadow: 0px 1px 2px rgba(0,0,0,.2);
 }
-
+/* button hover effect */
 button:hover{
     transition: all .5s;
     transform: rotate(-3deg) scale(1.1);
     box-shadow: 0px 3px 5px rgba(0,0,0,.4);
 }
 
+/* button position */
 .container {
-    margin: 25%;
+    position: relative;
+    top: 25px;
+    width: 250px;
 }
 
-.input-text {
-    padding: 5px 2px;
-}
-
-.g-recaptcha {
-    padding-left: 5px;
-    padding-right: 5px;
-
-}
-
-input {
-    height: auto;
-    width: 200px;
-
-}
-
+/* font for username and password */
 label {
-    font-size: 18px;
-    font-family:'Times New Roman', Times, serif; 
+    position: relative;
+    top: -15px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 3px; 
+    display: inline-block;
+}
+/* username text align */
+.username{
+    text-align: left;
+    display: inline-block;
+    text-align: center;
 }
 
+
+/* input username text box */
+.input-username {
+    width: 200px;
+    height: 15px;
+    font-size: 14px;
+    position: relative;
+    top: -8px;
+    display: inline-block;
+    margin: -2px 4px;
+    text-align: center;
+}
+
+/* password text align */
+.password {
+    text-align: center;
+    margin: 20px;
+}
+
+/* input password text box */
+.input-password {
+    width: 200px;
+    height: 15px;
+    font-size: 14px;
+    position: relative;
+    top: -8px;
+    display: inline-block;
+    margin: 0 35px;
+    text-align: center;
+}
+
+/* astrix for username and password */
 sup {
     color: rgb(216, 42, 42);
     font-size: 12px;
 }
+
+/* captcha button */
+.g-recaptcha {
+    position: relative;
+    top: 45px;
+    left: 8px;
+}
+
+
+
 
 
